@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIB TUNEZ – Stream Liberian Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░░ LANDING PAGE WRAPPER ░░░ -->
+  <div id="landingPage">
+
+  <!-- ░░░ NAVBAR ░░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <a href="#" class="logo" aria-label="LIB TUNEZ Home">
+        <span class="logo-lib">LIB</span><span class="logo-space"> </span><span class="logo-tunez">TUNEZ</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"    class="nav-link active">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#artists" class="nav-link">Artists</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="toggle-icon">🌙</span>
+        </button>
+        <a href="#" class="btn btn-primary btn-sm">Start Listening</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ░░░ HERO ░░░ -->
+  <section class="hero" id="hero">
+
+    <!-- Background layers -->
+    <div class="hero-bg">
+      <div class="bg-gradient"></div>
+      <div class="bg-grid"></div>
+      <div class="bg-glow glow-red"></div>
+      <div class="bg-glow glow-blue"></div>
+      <div class="bg-noise"></div>
+    </div>
+
+    <!-- Floating rings decoration -->
+    <div class="rings" aria-hidden="true">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
+
+    <!-- Vinyl record decoration -->
+    <div class="vinyl" aria-hidden="true">
+      <div class="vinyl-inner"></div>
+      <div class="vinyl-label"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        <span class="flag-stripe flag-red"></span>
+        Liberia's #1 Music Platform
+        <span class="flag-stripe flag-blue"></span>
+      </p>
+
+      <h1 class="hero-title">
+        <span class="title-lib">LIB</span>
+        <span class="title-space"> </span>
+        <span class="title-tunez">TUNEZ</span>
+      </h1>
+
+      <p class="hero-tagline">
+        Stream Liberian Music.<br />
+        <em>Support Local Talent.</em>
+      </p>
+
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary btn-lg">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="5,3 19,12 5,21"/>
+          </svg>
+          Start Listening
+        </a>
+        <a href="#" class="btn btn-outline btn-lg">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" y1="3" x2="12" y2="15"/>
+          </svg>
+          Upload Your Music
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50K+</span>
+          <span class="stat-label">Tracks</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">1.2K+</span>
+          <span class="stat-label">Artists</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Free</span>
+          <span class="stat-label">Always</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ░░░ ARTISTS SLIDER ░░░ -->
+  <section class="artists-section reveal" id="artists">
+
+    <!-- Section background -->
+    <div class="artists-bg" aria-hidden="true">
+      <div class="ab-glow ab-glow-left"></div>
+      <div class="ab-glow ab-glow-right"></div>
+    </div>
+
+    <!-- Section header -->
+    <div class="section-header">
+      <p class="section-eyebrow">
+        <span class="flag-stripe flag-red"></span>
+        Our Community
+        <span class="flag-stripe flag-blue"></span>
+      </p>
+      <h2 class="section-title">Trending Liberian <span class="title-accent">Artists</span></h2>
+      <p class="section-sub">Discover the voices shaping Liberia's sound.</p>
+    </div>
+
+    <!-- Slider wrapper -->
+    <div class="slider-root" id="artistSlider" aria-label="Trending Artists Carousel">
+
+      <!-- Fade edges -->
+      <div class="slider-fade slider-fade-left"  aria-hidden="true"></div>
+      <div class="slider-fade slider-fade-right" aria-hidden="true"></div>
+
+      <!-- Viewport -->
+      <div class="slider-viewport">
+        <div class="slider-track" id="sliderTrack">
+
+          <!-- Cards injected by JS -->
+
+        </div>
+      </div>
+
+      <!-- Arrow controls -->
+      <button class="slider-arrow arrow-prev" id="arrowPrev" aria-label="Previous artist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+      <button class="slider-arrow arrow-next" id="arrowNext" aria-label="Next artist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <polyline points="9 6 15 12 9 18"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Dot indicators -->
+    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Artist slide indicators"></div>
+
+  </section>
+
+  <!-- ░░░ ABOUT SECTION ░░░ -->
+  <section class="about-section" id="about">
+
+    <div class="about-bg" aria-hidden="true">
+      <div class="about-glow about-glow-center"></div>
+    </div>
+
+    <div class="about-inner">
+
+      <div class="about-badge reveal-fade">
+        <span class="flag-stripe flag-red"></span>
+        Our Story
+        <span class="flag-stripe flag-blue"></span>
+      </div>
+
+      <h2 class="about-title reveal-up">
+        About <span class="title-accent">LIB TUNEZ</span>
+      </h2>
+
+      <p class="about-body reveal-up" style="--delay: 0.12s">
+        LIB TUNEZ was born from one simple belief — Liberian music deserves a
+        stage the world can hear. We built a platform where local artists can
+        <strong>grow their craft</strong>, connect directly with fans who
+        genuinely care, and earn the support they deserve. Whether you're a
+        bedroom producer in Monrovia or a vocalist touring the continent,
+        LIB TUNEZ is your home base — the place where the Liberian sound
+        meets a global audience.
+      </p>
+
+      <div class="about-pillars reveal-up" style="--delay: 0.24s">
+        <div class="pillar">
+          <span class="pillar-icon" aria-hidden="true">🎵</span>
+          <span class="pillar-label">Authentic Sound</span>
+        </div>
+        <div class="pillar-sep" aria-hidden="true"></div>
+        <div class="pillar">
+          <span class="pillar-icon" aria-hidden="true">🤝</span>
+          <span class="pillar-label">Artist First</span>
+        </div>
+        <div class="pillar-sep" aria-hidden="true"></div>
+        <div class="pillar">
+          <span class="pillar-icon" aria-hidden="true">🌍</span>
+          <span class="pillar-label">Global Reach</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Decorative divider into Features -->
+    <div class="section-divider" aria-hidden="true">
+      <div class="divider-line"></div>
+      <div class="divider-icon">♦</div>
+      <div class="divider-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ░░░ FEATURES SECTION ░░░ -->
+  <section class="features-section" id="features">
+
+    <div class="features-bg" aria-hidden="true">
+      <div class="feat-glow feat-glow-left"></div>
+      <div class="feat-glow feat-glow-right"></div>
+    </div>
+
+    <div class="section-header reveal-fade">
+      <p class="section-eyebrow">
+        <span class="flag-stripe flag-red"></span>
+        What We Offer
+        <span class="flag-stripe flag-blue"></span>
+      </p>
+      <h2 class="section-title">Why <span class="title-accent">LIB TUNEZ</span></h2>
+      <p class="section-sub">Everything you need — whether you create or just love music.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <!-- Card 1 -->
+      <article class="feat-card reveal-card" style="--card-delay: 0s">
+        <div class="feat-card-glow" aria-hidden="true"></div>
+        <div class="feat-icon-wrap">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="10,8 16,12 10,16"/>
+            </svg>
+          </div>
+          <div class="feat-icon-ring" aria-hidden="true"></div>
+        </div>
+        <h3 class="feat-title">Stream Local Music</h3>
+        <p class="feat-desc">
+          Discover and enjoy the full depth of Liberian artistry — from
+          highlife classics to cutting-edge afrobeats, all in one place.
+        </p>
+        <div class="feat-tag">For Listeners</div>
+      </article>
+
+      <!-- Card 2 — featured / center -->
+      <article class="feat-card feat-card--featured reveal-card" style="--card-delay: 0.15s">
+        <div class="feat-card-glow" aria-hidden="true"></div>
+        <div class="feat-icon-wrap">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <div class="feat-icon-ring" aria-hidden="true"></div>
+        </div>
+        <h3 class="feat-title">Support Artists</h3>
+        <p class="feat-desc">
+          Help artists grow through direct support, tipping, and real
+          engagement — every listen and share makes a difference.
+        </p>
+        <div class="feat-tag feat-tag--accent">Most Popular</div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="feat-card reveal-card" style="--card-delay: 0.3s">
+        <div class="feat-card-glow" aria-hidden="true"></div>
+        <div class="feat-icon-wrap">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <div class="feat-icon-ring" aria-hidden="true"></div>
+        </div>
+        <h3 class="feat-title">Go Global</h3>
+        <p class="feat-desc">
+          Build a loyal fanbase at home, then ride the momentum to global
+          streaming platforms and international audiences.
+        </p>
+        <div class="feat-tag">For Artists</div>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ░░░ CONTACT SECTION ░░░ -->
+  <section class="contact-section" id="contact">
+
+    <div class="contact-bg" aria-hidden="true">
+      <div class="contact-glow contact-glow-left"></div>
+      <div class="contact-glow contact-glow-right"></div>
+      <div class="contact-grid"></div>
+    </div>
+
+    <div class="contact-inner">
+
+      <!-- Left: heading + info -->
+      <div class="contact-info reveal-up">
+        <p class="section-eyebrow" style="justify-content:flex-start">
+          <span class="flag-stripe flag-red"></span>
+          Reach Out
+          <span class="flag-stripe flag-blue"></span>
+        </p>
+        <h2 class="contact-title">Get in <span class="title-accent">Touch</span></h2>
+        <p class="contact-sub">
+          Have a question, want to partner with us, or just want to say what's
+          up? We'd love to hear from you.
+        </p>
+
+        <ul class="contact-details">
+          <li class="contact-detail">
+            <span class="cd-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f171a1313103f13161d0b0a111a0551130d">[email&#160;protected]</a></span>
+          </li>
+          <li class="contact-detail">
+            <span class="cd-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </span>
+            <span>Monrovia, Liberia</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: glass form -->
+      <div class="contact-form-wrap reveal-card" style="--card-delay:0.1s">
+        <div class="glass-card">
+
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Name</label>
+                <div class="input-wrap">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                      <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                  </span>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    placeholder="e.g. Kolou Freeman"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email Address</label>
+                <div class="input-wrap">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </span>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Message</label>
+              <div class="input-wrap input-wrap--textarea">
+                <span class="input-icon input-icon--top" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </span>
+                <textarea
+                  class="form-input form-textarea"
+                  id="contactMessage"
+                  name="message"
+                  placeholder="Tell us what's on your mind…"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <span class="form-error" id="msgError"></span>
+            </div>
+
+            <button class="btn btn-primary btn-submit" type="submit" id="submitBtn">
+              <span class="submit-label">Send Message</span>
+              <span class="submit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </span>
+            </button>
+
+            <!-- Success toast -->
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+              <span>🎵</span>
+              <strong>Message sent!</strong> We'll get back to you soon.
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-top-border" aria-hidden="true"></div>
+
+    <div class="footer-inner">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo" aria-label="LIB TUNEZ Home">
+          <span class="logo-lib">LIB</span><span class="logo-space"> </span><span class="logo-tunez">TUNEZ</span>
+          <span class="logo-dot"></span>
+        </a>
+        <p class="footer-tagline">Made for <span class="footer-highlight">Liberia</span>.</p>
+        <p class="footer-copy">© <span id="footerYear"></span> LIB TUNEZ. All rights reserved.</p>
+      </div>
+
+      <!-- Nav column -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <p class="footer-col-title">Navigate</p>
+        <ul>
+          <li><a href="#hero"     class="footer-link">Home</a></li>
+          <li><a href="#about"    class="footer-link">About</a></li>
+          <li><a href="#artists"  class="footer-link">Artists</a></li>
+          <li><a href="#features" class="footer-link">Features</a></li>
+          <li><a href="#contact"  class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Legal column -->
+      <div class="footer-legal-col">
+        <p class="footer-col-title">Legal</p>
+        <ul>
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Terms of Use</a></li>
+          <li><a href="#" class="footer-link">Cookie Settings</a></li>
+        </ul>
+      </div>
+
+      <!-- Social column -->
+      <div class="footer-social-col">
+        <p class="footer-col-title">Follow Us</p>
+        <div class="social-icons">
+
+          <!-- Twitter / X -->
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/>
+            </svg>
+          </a>
+
+          <!-- TikTok -->
+          <a href="#" class="social-icon" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom strip -->
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">
+        Built with 🎵 for the Liberian music community
+      </p>
+      <div class="footer-flag" aria-label="Liberian flag colors" aria-hidden="true">
+        <span class="ff-red"></span>
+        <span class="ff-white"></span>
+                <span class="ff-blue"></span>
+      </div>
+    </div>
+
+  </footer>
+
+  
+  </div><!-- /#landingPage -->
+
+  <!-- ░░░ MUSIC PLAYER ░░░ -->
+  <div id="playerPage" class="player-page" aria-label="LIB TUNEZ Music Player">
+
+    <!-- Hidden audio element -->
+    <audio id="audioEngine" preload="metadata"></audio>
+
+    <!-- Sidebar overlay (tap outside to close) -->
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <!-- ── Sidebar ─────────────────────────────────────── -->
+    <aside class="player-sidebar" id="playerSidebar" aria-label="Player menu">
+
+      <!-- Close button (mobile) -->
+      <button class="ps-close-btn" id="sidebarCloseBtn" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="ps-top">
+        <a href="#" class="logo ps-logo" id="backToHome" aria-label="Back to home">
+          <span class="logo-lib">LIB</span><span class="logo-space"> </span><span class="logo-tunez">TUNEZ</span>
+          <span class="logo-dot"></span>
+        </a>
+
+        <nav class="ps-nav" aria-label="Player navigation">
+          <button class="ps-nav-item ps-nav-active" data-view="home" aria-current="page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Home</span>
+          </button>
+          <button class="ps-nav-item" data-view="trending">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            <span>Trending</span>
+          </button>
+          <button class="ps-nav-item" data-view="artists">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Artists</span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="ps-view-title" id="psViewTitle">Home <span>Picks</span></div>
+      <div class="ps-playlist-header">
+        <span class="ps-section-label">Your Playlist</span>
+        <span class="ps-track-count" id="trackCount">0 songs</span>
+      </div>
+
+      <ul class="ps-playlist" id="playlist" role="listbox" aria-label="Song playlist">
+        <!-- Injected by JS -->
+      </ul>
+
+      <!-- Mini now-playing bar (mobile) -->
+      <div class="ps-mini-bar" id="miniBar" aria-hidden="true">
+        <img class="mini-cover" id="miniCover" src="" alt="" />
+        <div class="mini-info">
+          <span class="mini-title" id="miniTitle">—</span>
+          <span class="mini-artist" id="miniArtist">—</span>
+        </div>
+        <button class="mini-play" id="miniPlayBtn" aria-label="Play/Pause">
+          <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- ── Main player area ────────────────────────────── -->
+    <main class="player-main" id="playerMain">
+
+      <!-- Top bar -->
+      <header class="pm-topbar">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <button class="pm-menu-btn" id="sidebarToggleBtn" aria-label="Open playlist menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <button class="pm-back-btn" id="pmBackBtn" aria-label="Back to landing page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            Back
+          </button>
+        </div>
+        <div class="pm-now-badge">
+          <span class="pm-now-dot" aria-hidden="true"></span>
+          Now Playing
+        </div>
+        <button class="theme-toggle pm-theme-toggle" id="pmThemeToggle" aria-label="Toggle theme">
+          <span class="toggle-icon">🌙</span>
+        </button>
+      </header>
+
+      <!-- Album + info -->
+      <div class="pm-hero">
+
+        <div class="pm-cover-wrap">
+          <div class="pm-cover-glow" aria-hidden="true"></div>
+          <img class="pm-cover" id="pmCover" src="" alt="Album cover" />
+          <div class="pm-cover-vinyl" aria-hidden="true"></div>
+          <div class="pm-buffering-ring" aria-hidden="true"></div>
+        </div>
+
+        <div class="pm-track-info">
+          <p class="pm-genre-tag" id="pmGenre">—</p>
+          <h1 class="pm-song-title" id="pmTitle">Select a song</h1>
+          <p class="pm-artist-name" id="pmArtist">—</p>
+
+          <!-- Waveform visualiser -->
+          <div class="pm-visualizer" id="visualizer" aria-hidden="true">
+            <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+            <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+            <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+            <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+            <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+            <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+            <div class="viz-bar"></div><div class="viz-bar"></div>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="pm-progress-wrap">
+            <span class="pm-time" id="pmCurrentTime">0:00</span>
+            <div class="pm-progress-track" id="progressTrack" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+              <div class="pm-progress-fill" id="progressFill"></div>
+              <div class="pm-progress-thumb" id="progressThumb"></div>
+            </div>
+            <span class="pm-time" id="pmDuration">0:00</span>
+          </div>
+
+          <!-- Controls -->
+          <div class="pm-controls">
+            <button class="ctrl-btn ctrl-secondary" id="shuffleBtn" aria-label="Shuffle" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+            </button>
+            <button class="ctrl-btn ctrl-main" id="prevBtn" aria-label="Previous">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="19,20 9,12 19,4"/><rect x="5" y="4" width="2" height="16"/></svg>
+            </button>
+            <button class="ctrl-btn ctrl-play" id="playBtn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+            </button>
+            <button class="ctrl-btn ctrl-main" id="nextBtn" aria-label="Next">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,4 15,12 5,20"/><rect x="17" y="4" width="2" height="16"/></svg>
+            </button>
+            <button class="ctrl-btn ctrl-secondary" id="repeatBtn" aria-label="Repeat" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            </button>
+          </div>
+
+          <!-- Volume -->
+          <div class="pm-volume">
+            <button class="vol-mute-btn" id="muteBtn" aria-label="Mute">
+              <svg class="vol-icon vol-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+              <svg class="vol-icon vol-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            </button>
+            <div class="vol-track" id="volTrack" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" tabindex="0">
+              <div class="vol-fill" id="volFill"></div>
+              <div class="vol-thumb" id="volThumb"></div>
+            </div>
+            <span class="vol-label" id="volLabel">80%</span>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+  <div class="api-toast" id="apiToast" role="status" aria-live="polite"></div>
+  </div><!-- /#playerPage -->
+
+  <script src="script.js"></script>
+</body>
+</html>
